@@ -1,0 +1,11 @@
+What does malloc do?
+
+allocates memory on the heap
+
+stack:
+- normal variables and functions are automatically stored on the stack
+- these are deallocated automatically at the end of scope
+
+heap:
+- malloc allocates memory on the heap
+- required to manually allocate and deallocate memory
