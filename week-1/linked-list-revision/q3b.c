@@ -70,7 +70,8 @@ int main(int argc, char *argv[]) {
         int number;
         printf("Enter a value to delete: ");
         scanf("%d", &number);
-        listDelete(list, number);
+        listDelete(list, number); 
+        // listDelete no longer has to return anything
         printf("new List: ");
         printList(list);
     }
