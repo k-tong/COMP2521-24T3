@@ -1,0 +1,16 @@
+recursion: a technique where we call the same function in a
+smaller size
+
+Intuition:
+- a problem may be solved recursively when you find yourself
+solving the same/similar problem multiple times at a smaller size
+
+Implementing:
+Assume we know how to get the return value of the same function
+at a smaller 'size'
+Figure out how to use current position/node in combination
+with these assumptions to get the result
+
+Base case:
+Eventually we get to a base case which will often have a more 
+obvious return value
