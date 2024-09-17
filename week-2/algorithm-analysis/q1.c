@@ -38,6 +38,9 @@ bool isPalindrome(char *word) {
     // overall O(3n/2 + 2)
     // O(n + 2)
     // O(n)
+    // O(n) is not necessarily faster than O(n^2)
+    // n + 1 billion lines of code
+    // O(n^2) n^2 + 2
 
     return true;
 }
