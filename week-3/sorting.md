@@ -10,12 +10,14 @@ input
 | **bubble**       |    O(n)    |    O(n^2)     |    O(n^2)    |    Special Case: O(n^2)   |     Yes      |    Yes     |
 | **insertion**    |   O(n)     |     O(n^2)    |   O(n^2)     |   Special case: O(n)    |    Yes       |   Yes      |
 | **select**       |   O(n^2)    |    O(n^2)    |   O(n^2)     |       |    No       |  no
-merge**        |    O (nlogn)    |    O(nlogn)     |  O(nlogn)      |       |     no      |    yes (if we merge from left)     |
+**merge**        |    O (nlogn)    |    O(nlogn)     |  O(nlogn)      |       |     no      |    yes (if we merge from left)     |
 | **naive quick**  |  O (n^2)     |    O(n^2)     |   O(nlogn)     |       |   no        |   no      |
 | **mo3 quick**    |     O(nlogn)   |   O(nlogn)      |   O(nlogn)     |       |    no       |    no     |
 | **random quick** |   O(nlogn)     |   O(nlogn)      |   O(nlogn)     |   not deterministic    |     no      |    no     |
 
 
+Special Case refers to tutorial Lab 3 Q2 example
+where we swap the first and last numbers of a sorted list
 
 # Time Complexity Explanations
 
