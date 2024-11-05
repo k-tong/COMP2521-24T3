@@ -1,0 +1,10 @@
+
+
+Issue is that our double hashing ends up in an infinite loop of filled
+positions such that we can't actually find a new position
+
+
+- Make size of hash table prime
+- Make secondary hash function return value smaller than size
+
+- p = 1 * p

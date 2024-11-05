@@ -1,0 +1,4 @@
+h2(x) = x % 2520 + 1
+
+always returns a number less than the prime size of the hash table
+which avoids the issue listed in q4

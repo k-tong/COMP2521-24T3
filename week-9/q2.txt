@@ -1,0 +1,37 @@
+For a hash table of size N that uses separate chaining for 
+collision resolution, with the chains sorted in ascending order by key, 
+what are the best case and worst case costs for inserting 
+k = 2 N
+items into the table? 
+Assume that insertion cost is measured in terms of number of key comparisons. 
+What will be average search cost after all the insertions are done?
+
+
+hash table of size number N
+insert 2N keys
+
+Worst Case:
+if we add 2N keys in ascending order which all hash to the same index position
+
+- first key added does 0 comparisons
+- second key added does 1 comparisons
+- ... and so on 
+- 2N key does 2N - 1 comparisons
+- total search cost 
+= 0 + 1 + ... + 2N - 1
+= (2N) * (2N - 1) / 2 = N(2N - 1) approx = 2N^2
+average cost: 2N^2 / 2N = N
+average insertion does N comparisons in the worst case
+
+
+Best case:
+- since 2N nodes and N positions
+- best case is as spread out as possible
+- each index would have 2 Nodes
+- insert first N nodes each makes 0 comparisons
+- for next N nodes, must do 1 comparison with existing value
+before I can add it into the linked at the index
+- in total N comparisons, 2N insertions = N/2 average insertion cost
+
+
+

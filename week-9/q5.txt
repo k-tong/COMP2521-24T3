@@ -1,0 +1,34 @@
+Both hash tables and balanced search trees (e.g., AVL trees) are efficient 
+data structures that can be used for the insertion, searching and 
+deletion of key-value pairs. Compare the advantages and disadvantages of each.
+
+Consider:
+- time complexity
+- memory usage
+- orderedness
+
+
+AVL Trees:
+- O(logn) worst case for insertion, deletion, check
+
+Advantages:
+- Uses as much memory as it required to add a new node for each new key
+- ordered which allows us to store and iterate (like cursors in Ass1)
+through the smallest or biggest items in the list very efficiently
+- meanwhile we would have to look through entire table to do this in a hash table
+
+Hash Tables:
+- O(1) average time complexity for insertion, deletion and checking
+- use more memory than the amount of items it is storing
+- not ordered
+
+Advantage: faster than AVL tree most of the time 
+Disadvantage: 
+- Still can have O(n) operations in worst case (particularly with bad hashes)
+- requires more memory than the number of items stored in the hash table
+to ensure minimal hash collisions and efficient usage
+
+
+
+
+
