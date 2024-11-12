@@ -1,0 +1,12 @@
+What are the two cases when deleting a word from a trie? 
+How is each case handled?
+
+
+Case 1: last letter of removed word has children
+- so we just set the isWord to be false
+
+Case 2: Last letter of removed word is a leaf node
+- we don't want memory leaks so we recursively
+keep removing the parent nodes until we reach a node that
+is either the end of a word (isWord is True) or a node
+that contains other children

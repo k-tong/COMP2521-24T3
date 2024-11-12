@@ -1,0 +1,25 @@
+Autocomplete is a feature in which an application predicts
+the rest of a word a user is typing. For example, 
+if a user has typed in "th", then autocomplete may suggest 
+the words "the", "they", "then", and so on.
+
+a) Explain how a trie could be used to implement basic autocomplete, 
+which suggests all possible words.
+
+- store all words in a trie
+- traverse the letters which a user has input until the last letter
+- provide suggestions using the words formed by all the remaining nodes
+in the trie
+
+b) Users are much more likely to type some words than others, so ideally
+autocomplete should suggest more likely words. For example, if a user has
+typed "tho", autocomplete should suggest "though" instead of "thou". How
+could you extend your solution so that autocomplete suggests more likely
+words?
+
+- each time we traverse a node in a search, we increment a counter
+which keeps track of how many times we visit each node
+- using this information, at a given node, we can check the counter
+of the children nodes to see what words are used the most frequently
+- potentially use an additional data strucuture such as a max heap
+so that we can more efficiently get the most commonly used later words

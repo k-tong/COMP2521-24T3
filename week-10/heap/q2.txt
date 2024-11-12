@@ -1,0 +1,35 @@
+
+Suppose you are given an array A of size n, 
+and you would like to find the largest 
+k elements (k≤n). 
+For example, if given the array A=[7,4,2,5,9]
+and the value k=3, the largest k values are 9, 7 and 5.
+
+A simple way to solve this problem is to sort the array in increasing order, 
+and then the largest k elements would be the last k
+elements of the sorted array. 
+
+What is the worst-case time complexity of this approach?
+
+- Since we are just sorting
+- O(nlogn) to sort
+- O(k) to find k largest numbers
+- since k <= n, O(nlogn) time complexity
+
+Come up with a more efficient method that uses a heap. 
+What is the worst-case time complexity of this method?
+
+M1: Try inserting everything into the heap and extract k
+- Max Heap
+- inserting n values, each nlogn time, O(nlogn)
+- O(klogn) to delete k values
+
+M2: Heap maintains the greatest k values
+- Min heap so that we can get rid of the smallest numbers
+- insert until we have k numbers
+- continually insert and delete while maintaining k numbers
+
+by the end, heap has at most k values
+- O(n * logk)
+
+

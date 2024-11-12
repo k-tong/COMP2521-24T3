@@ -1,0 +1,12 @@
+
+
+Heap Properties:
+
+1. Order Property
+- when visualised as a tree, all parents must be larger
+than their two children 
+
+2. Structural Property
+- Heap must be filled up level order left to right
+- Once we encounter a NULL node in our traversal,
+there should be no more other non-NULL nodes
